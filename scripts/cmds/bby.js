@@ -5,7 +5,7 @@ const baseApiUrl = async () => {
 
 module.exports.config = {
     name: "bby",
-    aliases: ["baby", "bbe", "babe", "sam", "bot", "chat"],
+    aliases: ["baby", "bby", "babe", "sam", "bot", "chat"],
     version: "6.9.0",
     author: "dipto | nexo_here",
     countDown: 0,
@@ -25,7 +25,7 @@ module.exports.onStart = async ({ api, event, args, usersData }) => {
 
     try {
         if (!args[0]) {
-            const ran = ["Bolo baby", "hum", "type help baby", "type !baby hi"];
+            const ran = ["Bolo baby", "hum", "🐤🐤", "🌀\n🫴🏻"];
             return api.sendMessage(ran[Math.floor(Math.random() * ran.length)], event.threadID, event.messageID);
         }
 
@@ -147,9 +147,9 @@ module.exports.onReply = async ({ api, event, Reply }) => {
 module.exports.onChat = async ({ api, event, message }) => {
     try {
         const body = event.body ? event.body.toLowerCase() : "";
-        if (body.startsWith("baby") || body.startsWith("bby") || body.startsWith("bot") || body.startsWith("jan") || body.startsWith("babu") || body.startsWith("janu")) {
+        if (body.startsWith("hinata") || body.startsWith("bby") || body.startsWith("bot") || body.startsWith("jan") || body.startsWith("Hinata") || body.startsWith("HINATA")) {
             const arr = body.replace(/^\S+\s*/, "");
-            const randomReplies = ["Bol 🐸", "Bol suntechi 🐍", "Dakis ken 😾?", "Bolo jaan ki korte pari tomar jonno 😞"];
+            const randomReplies = ["Bol 🐸", "Bol suntechi 🐍", "Dakis ken 😾?", "Bolo jaan ki korte pari tomar jonno 😚"," 🌀\n🫴🏻 "];
             if (!arr) {
                 await api.sendMessage(randomReplies[Math.floor(Math.random() * randomReplies.length)], event.threadID, (error, info) => {
                     if (!info) message.reply("info obj not found");
