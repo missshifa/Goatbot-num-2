@@ -1,6 +1,6 @@
 ---------
 
-### 𝐆𝐎𝐀𝐓 𝐁𝐎𝐓 𝐒𝐇𝐈𝐅𝐒𝐓  🌺
+### 𝐆𝐎𝐀𝐓 𝐁𝐎𝐓 𝐒𝐇𝐈𝐅𝐀𝐓  🌺
 
 ❖ **`A Messenger Multi Device Bot To Take Your Messenger To Another Level!`** 
 
