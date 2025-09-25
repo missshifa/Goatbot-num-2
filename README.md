@@ -1,391 +1,198 @@
-<div align="center">
+---------
 
-![banner](https://i.ibb.co/RQ28H2p/banner.png)
+### 𝐆𝐎𝐀𝐓 𝐁𝐎𝐓 𝐒𝐇𝐈𝐅𝐒𝐓  🌺
 
-# 🐐 Goat Bot V2 - Advanced Chatbot Messenger 🤖
+❖ **`A Messenger Multi Device Bot To Take Your Messenger To Another Level!`** 
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E9EFF&center=true&vCenter=true&width=600&lines=🚀+Welcome+to+Goat+Bot+V2!;🤖+The+Most+Advanced+Messenger+Bot;💫+Powered+by+Unofficial+Facebook+API;🎯+Built+for+Performance+%26+Reliability" alt="Typing SVG" />
+
+
+Assalamualaikum Everyone!  
+**Welcome to My 𝐒𝐇𝐈𝐅𝐀𝐓 BOT Fork!**
+
+![Box-shaped Image](https://i.imgur.com/K2Rgmw6.jpeg)
+
+<p align="center" style="animation: glow 2s infinite alternate; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <span style="font-size: 24px; font-weight: bold;"> CHAT BOT</span><br>
+  <span> 𝗗𝗔𝗩𝗘𝗟𝗢𝗣 𝗕𝗬 𝗦𝗛𝗜𝗙𝗔𝗧</span>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/ntkhang03/Goat-Bot-V2?style=for-the-badge&logo=github&color=yellow" alt="Stars">
-  <img src="https://img.shields.io/github/forks/ntkhang03/Goat-Bot-V2?style=for-the-badge&logo=github&color=blue" alt="Forks">
-  <img src="https://img.shields.io/github/issues/ntkhang03/Goat-Bot-V2?style=for-the-badge&logo=github&color=red" alt="Issues">
-  <img src="https://img.shields.io/github/license/ntkhang03/Goat-Bot-V2?style=for-the-badge&logo=github&color=green" alt="License">
-</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
-  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white" alt="Express.js">
-</p>
+_______
+### <br>   ❖ DEPLOY_WORKFLOWS ❖
+```
+name: Node.js CI
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    # Step to check out the repository code
+    - uses: actions/checkout@v2
+
+    # Step to set up the specified Node.js version
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    # Step to install dependencies
+    - name: Install dependencies
+      run: npm install
+
+    # Step to run the bot with the correct port
+    - name: Start the bot
+      env:
+        PORT: 8080
+      run: npm start
+```
+
+___
+
+## 🔥 Features  
+
+**• Auto Chat**  
+Enjoy automatic and seamless conversations through natural language processing.  
+
+**• Photo Editing**  
+Edit professional quality photos using our advanced commands, no additional apps needed.  
+
+**• Image Generation**  
+Create unique images using our cutting-edge text-to-image technology.  
+
+**• Video Downloader**  
+Download HD videos from YouTube, Facebook, TikTok and other platforms.  
+
+**• Interactive Games**  
+Play 20+ fun games directly in messenger, no installation hassle!  
+
+**• Fun Commands**  
+Surprise your friends with hundreds of fun commands!  
+___
+
+<div style="max-width: 500px; margin: auto; font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+
+  <h2 style="text-align: center; margin-bottom: 30px;">How to Use These Platforms</h2>
+
+  <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+    <img src="https://img.icons8.com/color/48/000000/replit.png" alt="Replit" style="margin-right: 20px; flex-shrink: 0;" />
+    <div>
+      <h3 style="margin: 0 0 8px;">Replit</h3>
+      <p style="margin: 0;">
+        Replit is an online coding environment that lets you write, run, and test code directly from your browser without any setup.  
+        Simply sign up for a free account, create a new project (called a “Repl”), and start coding in languages like JavaScript, Python, C++, and many more.  
+        It’s perfect for quick prototyping, learning programming, or collaborating with others in real-time.  
+        You can also host simple web apps and share your projects with a public URL instantly.
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+    <img src="https://img.icons8.com/fluency/48/000000/cloud.png" alt="Render" style="margin-right: 20px; flex-shrink: 0;" />
+    <div>
+      <h3 style="margin: 0 0 8px;">Render</h3>
+      <p style="margin: 0;">
+        Render is a cloud hosting platform that allows you to deploy websites, APIs, and applications easily without worrying about server management.  
+        After developing your app locally or on Replit, you can push your code to Render for continuous deployment.  
+        It supports popular frameworks, automatic SSL, custom domains, and background workers.  
+        This platform is ideal for developers who want hassle-free hosting with scalable resources.
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: flex-start;">
+    <img src="https://img.icons8.com/fluency/48/000000/github.png" alt="GitHub" style="margin-right: 20px; flex-shrink: 0;" />
+    <div>
+      <h3 style="margin: 0 0 8px;">GitHub</h3>
+      <p style="margin: 0;">
+        GitHub is a web-based platform for version control and collaborative code management using Git.  
+        It lets you store your code repositories securely, track changes, and collaborate with other developers through pull requests and issues.  
+        GitHub also supports project documentation via README files and wikis, and it integrates with many CI/CD tools to automate workflows.  
+        Use GitHub to manage your projects efficiently and share your code with the developer community.
+      </p>
+    </div>
+  </div>
 
 </div>
 
 
-## 🌟 Introduction
 
-<div align="center">
-
-### 🎯 The Ultimate Facebook Messenger Bot Experience
-
-<img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="300" alt="bot animation">
-
-#### 🍪 Join our [Messenger Group](https://m.me/j/AbZX5he4yIFsgui_/) for Support!
-
-*If you encounter any issues or difficulties, don't hesitate to reach out and ask for assistance here. Our team is here to help you with any problems you may face.*
-
-**💬 Have questions? Need help? Our community is ready to assist you on Messenger!**
-
-</div>
 
 ---
 
-## 👥 Credits & Contributors
 
-<div align="center">
 
-### 🏆 Development Team
 
-<table>
-<tr>
-    <td align="center">
-        <a href="https://github.com/ntkhang03">
-            <img src="https://avatars.githubusercontent.com/u/ntkhang03?v=4" width="100px;" alt="NTKhang"/><br />
-            <sub><b>🎖️ NTKhang</b></sub>
-        </a><br />
-        <sub>🚀 Main Author & Creator</sub><br />
-        <sub>💡 Original Developer</sub>
-    </td>
-    <td align="center">
-        <a href="https://github.com/NeoKEX">
-            <img src="https://github.com/identicons/NeoKEX.png" width="100px;" alt="NeoKEX"/><br />
-            <sub><b>⚡ NeoKEX</b></sub>
-        </a><br />
-        <sub>🔧 Modified & Enhanced</sub><br />
-        <sub>🎨 Custom Improvements</sub>
-    </td>
-</tr>
-</table>
-
-### 🙏 Special Thanks
-
-<img src="https://contrib.rocks/image?repo=ntkhang03/Goat-Bot-V2" />
-
-*Made with ❤️ by the community*
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-</div>
-
-## 📋 Table of Contents
-
-<div align="center">
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-### 🗂️ Quick Navigation
-
-<table>
-<tr>
-<td width="50%">
-
-**📖 Getting Started**
-- [📝 **Note**](#-note)
-- [🚧 **Requirements**](#-requirements)
-- [📝 **Tutorial**](#-tutorial)
-- [🔔 **Update Notifications**](#-how-to-get-notification-when-have-new-update)
-- [🆙 **How to Update**](#-how-to-update)
-
-</td>
-<td width="50%">
-
-**🛠️ Development**
-- [🛠️ **Create Commands**](#️-how-to-create-new-commands)
-- [💭 **Support**](#-support)
-- [📚 **Languages**](#-support-languages-in-source-code)
-- [📌 **Common Issues**](#-common-problems)
-- [📸 **Screenshots**](#-screenshots)
-
-</td>
-</tr>
-</table>
-
-**⚠️ Important Sections**
-- [❌ **Security Warning**](#-do-not-use-the-original-undergraduate-version)
-- [👥 **Credits**](#-credits--contributors)
-- [📜 **License**](#-license)
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-</div>
-
-<hr>
-
-## 📝 **Note**
-- This is a messenger chat bot using a personal account, using an [unofficial api](https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md) ([Origin here](https://github.com/Schmavery/facebook-chat-api)) and this may lead to facebook account being locked due to spam or other reasons. 
-- So, I recommend using a clone account (one that you're willing to throw away at any time)
-- ***I am not responsible for any problems that may arise from using this bot.***
-
-## 🚧 **Requirements**
-- Node.js 16.x [Download](https://nodejs.org/dist/v16.20.0) | [Home](https://nodejs.org/en/download/) | [Other versions](https://nodejs.org/en/download/releases/)
-- Knowledge of **programming**, javascript, nodejs, unofficial facebook api
-
-## 📝 **Tutorial**
-Tutorial has been uploaded on YouTube
-- For mobile phone: https://www.youtube.com/watch?v=grVeZ76HlgA
-- For vps/windows: https://www.youtube.com/watch?v=uCbSYNQNEwY
+## 👨‍💻 **ABOUT THE DEVELOPER**  
   
-Summary instructions:
-- See [here](https://github.com/ntkhang03/Goat-Bot-V2/blob/main/STEP_INSTALL.md)
+**Name:** **`SHIFAT`**  
+**Nice Name:** **`SIFU`**  
+**Profession:** **` CHATBOT DEVELOPER`**  
+**Location:** **`KHULNA, BANGLADESH`**  
 
-## 🔔 **How to get notification when have new update?**
-- Click on the `Watch` button in the upper right corner of the screen and select `Custom` and select `Pull requests` and `Releases` and click `Apply` to get notified when there is a new update.
+### 📞 **CONTACT INFORMATION**  
+- **WhatsApp:** **[01964467614](https://wa.me/+01964467614)**  
+- **Facebook:** **[Facebook ID](https://facebook.com/100078859776449)**  
+- **Messenger:** **[Message Me](https://m.me/100078859776449)**  
 
-## 🆙 **How to Update**
-Tutorial has been uploaded on YouTube
-- on phone/repl: https://youtu.be/grVeZ76HlgA?t=1342
-- on vps/computer: https://youtu.be/uCbSYNQNEwY?t=508
-
-## 🛠️ **How to create new commands**
-- See [here](https://github.com/ntkhang03/Goat-Bot-V2/blob/main/DOCS.md)
-
-## 💭 **Support**
-If you have major coding issues with this bot, please join and ask for help.
-- https://discord.com/invite/DbyGwmkpVY (recommended)
-- https://www.facebook.com/groups/goatbot
-- https://www.facebook.com/groups/goatbot/permalink/493150412403231
-- https://m.me/j/AbYrIGusyc0M402z
-- ~~https://t.me/gatbottt~~ (no longer supported)
-- ***Please do not inbox me, I do not respond to private messages, any questions please join the chat group for answers. ThankThanks!***
-
-## 📚 **Support Languages in source code**
-- Currently, the bot supports 2 languages:
-- [x] `en: English`
-- [x] `vi: Vietnamese`
-
-- Change language in `config.json` file
-- You can customize the language in the folder `languages/`, `languages/cmds/` and `languages/events/`
-
-## 📌 **Common Problems**
-<details>
-        <summary>
-                📌 Error 400: redirect_uri_mismatch
-        </summary>
-        <p><img src="https://i.ibb.co/6Fbjd4r/image.png" width="250px"></p> 
-        <p>1. Enable Google Drive API: <a href="https://youtu.be/nTIT8OQeRnY?t=347">Tutorial</a></p>
-        <p>2. Add uri <a href="https://developers.google.com/oauthplayground">https://developers.google.com/oauthplayground</a> (not <a href="https://developers.google.com/oauthplayground/">https://developers.google.com/oauthplayground/</a>) to <b>Authorized redirect URIs</b> in <b>OAuth consent screen:</b> <a href="https://youtu.be/nTIT8OQeRnY?t=491">Tutorial</a></p>  
-        <p>3. Choose <b>https://www.googleapis.com/auth/drive</b> and <b>https://mail.google.com/</b> in <b>OAuth 2.0 Playground</b>: <a href="https://youtu.be/nTIT8OQeRnY?t=600">Tutorial</a></p>
-</details>
-
-<details>
-        <summary>
-                📌 Error for site owners: Invalid domain for site key
-        </summary>
-                <p><img src="https://i.ibb.co/2gZttY7/image.png" width="250px"></p>
-                <p>1. Go to <a href="https://www.google.com/recaptcha/admin">https://www.google.com/recaptcha/admin</a></p>
-                <p>2. Add domain <b>repl.co</b> (not <b>repl.com</b>) to <b>Domains</b> in <b>reCAPTCHA v2</b> <a href="https://youtu.be/nTIT8OQeRnY?t=698">Tutorial</a></p>
-</details>
-
-<details>
-        <summary>
-                📌 GaxiosError: invalid_grant, unauthorized_client 
-        </summary>
-                <p><img src="https://i.ibb.co/n7w9TkH/image.png" width="250px"></p>
-                <p><img src="https://i.ibb.co/XFKKY9c/image.png" width="250px"></p>
-                <p><img src="https://i.ibb.co/f4mc5Dp/image.png" width="250px"></p>
-                <p>- If you don't publish the project in google console, the refresh token will expire after 1 week and you need to get it back. <a href="https://youtu.be/nTIT8OQeRnY?t=445">Tuatorial</a></p>
-</details>
-
-<details>
-        <summary>
-                📌 GaxiosError: invalid_client
-        </summary>
-                <p><img src="https://i.ibb.co/st3W6v4/Pics-Art-01-01-09-10-49.jpg" width="250px"></p>
-                <p>- Check if you have entered your google project client_id correctly <a href="https://youtu.be/nTIT8OQeRnY?t=509">Tuatorial</a></p>
-</details>
-
-<details>
-        <summary>
-                📌 Error 403: access_denied
-        </summary>
-                <p><img src="https://i.ibb.co/dtrw5x3/image.png" width="250px"></p>
-                <p>- If you don't publish the project in google console only the approved accounts added to the project can use it <a href="https://youtu.be/nTIT8OQeRnY?t=438">Tuatorial</a></p>
-</details>
-
-## ❌ **DO NOT USE THE ORIGINAL UNDERGRADUATE VERSION**
-- The use of unknown source code can lead to the device being infected with viruses, malware, hacked social accounts, banks, ...
-- Goat-Bot-V2 is only published at https://github.com/ntkhang03/Goat-Bot-V2, all other sources, all forks from other github, replit,... are fake, violate policy
-- If you use from other sources (whether accidentally or intentionally) it means that you are in violation and will be banned without notice
-## 📸 **Screenshots**
-- ### Bot
-<details>
-        <summary>
-                Rank system
-        </summary>
-
-  - Rank card:
-  <p><img src="https://i.ibb.co/d0JDJxF/rank.png" width="399px"></p>
-
-  - Rankup notification:
-  <p><img src="https://i.ibb.co/WgZzthH/rankup.png" width="399px"></p>
-
-  - Custom rank card:
-  <p><img src="https://i.ibb.co/hLTThLW/customrankcard.png" width="399px"></p>
-</details>
-
-<details>
-        <summary>
-                Weather
-        </summary>
-        <p><img src="https://i.ibb.co/2FwWVLv/weather.png" width="399px"></p>
-</details>
-
-<details>
-        <summary>
-                Auto send notification when have user join or leave box chat (you can custom message)
-        </summary>
-        <p><img src="https://i.ibb.co/Jsb5Jxf/wcgb.png" width="399px"></p>
-</details>
-
-<details>
-        <summary>
-                Openjourney
-        </summary>
-        <p><img src="https://i.ibb.co/XJfwj1X/Screenshot-2023-05-09-22-43-58-630-com-facebook-orca.jpg" width="399px"></p>
-</details>
-
-<details>
-        <summary>
-                GPT
-        </summary>
-        <p><img src="https://i.ibb.co/D4wRbM3/Screenshot-2023-05-09-22-47-48-037-com-facebook-orca.jpg" width="399px"></p>
-        <p><img src="https://i.ibb.co/z8HqPkH/Screenshot-2023-05-09-22-47-53-737-com-facebook-orca.jpg" width="399px"></p>
-        <p><img src="https://i.ibb.co/19mZQpR/Screenshot-2023-05-09-22-48-02-516-com-facebook-orca.jpg" width="399px"></p>
-</details>
+### 🚀 **DEVELOPMENT APPROACH**  
+- 💻 **Copy-paste techniques with customizations**  
+- 🤝 **Collaborative development with friends**  
+- 🤖 **AI-powered using ChatGPT and other advanced tools**  
 
 
 
-- ### Dashboard
-<details>
-        <summary>
-                Home:
-        </summary>
-        <p><img src="https://i.ibb.co/xzv6s2j/dbHome.png" width="399px"></p>
-</details>
-
-<details>
-        <summary>
-                Stats:
-        </summary>
-        <p><img src="https://i.ibb.co/zVZv9LF/dbStats.png" width="399px"></p>
-</details>
-
-<details>
-        <summary>
-                Login/Register:
-        </summary>
-        <p><img src="https://i.ibb.co/SK61MRx/dbLogin.png" width="399px"></p>
-        <p><img src="https://i.ibb.co/1rchbb1/db-Register.png" width="399px"></p>
-</details>
-
-<details>
-        <summary>
-                Dashboard Thread:
-        </summary>
-        <p><img src="https://i.ibb.co/NK5yYwx/dbThread.png" width="399px"></p>
-</details>
-
-<details>
-        <summary>
-                Custom on/off:
-        </summary>
-        <p><img src="https://i.ibb.co/mJqsP2L/dbCustom.png" width="399px"></p>
-</details>
-
-<details>
-        <summary>
-                Custom welcome message (similar with leave, rankup (coming soon), custom command (coming soon))
-        </summary>
-        <p><img src="https://i.ibb.co/3SyfQkz/db-Custom-Welcome.png" width="399px"></p>
-</details>
-
-## ✨ **Copyright & Attribution**
-
-<div align="center">
-
-### 🏆 Project Ownership & Recognition
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-**Original Creator & Main Author:**
-- 🎖️ **[NTKhang (NTKhang03)](https://github.com/ntkhang03)** - *Main Developer & Project Owner*
-
-**Modified & Enhanced By:**
-- ⚡ **NeoKEX** - *Custom Modifications & Improvements*
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-*This project is a collaborative effort built upon the original work of NTKhang with custom enhancements by NeoKEX*
-
-</div>
-
-## 📜 **License**
-
-**VIETNAMESE**
-
-- ***Nếu bạn vi phạm bất kỳ quy tắc nào, bạn sẽ bị cấm sử dụng dự án của tôi***
-- Không bán mã nguồn của tôi
-- Không tự xưng là chủ sở hữu của mã nguồn của tôi
-- Không kiếm tiền từ mã nguồn của tôi (chẳng hạn như: mua bán lệnh, mua bán/cho thuê bot, kêu gọi quyên góp, v.v.)
-- Không xóa/sửa đổi credit (tên tác giả) trong mã nguồn của tôi
-
-**ENGLISH**
-
-- ***If you violate any rules, you will be banned from using my project***
-- Don't sell my source code
-- Don't claim my source code as your own
-- Do not monetize my source code (such as: buy and sell commands, buy and sell bots, call for donations, etc.)
-- Don't remove/edit my credits (author name) in my source code
 
 ---
 
-<div align="center">
 
-## 📊 Repository Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ntkhang03&show_icons=true&theme=radical" alt="GitHub Stats" />
-</p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ntkhang03&theme=radical" alt="GitHub Streak" />
-</p>
 
-## 🌟 Star History
+## ❖ SUPPORT  
+If you need any help, you can contact the admin.
+Please do not disturb the admin unless you have a special need. Thank you! 
 
 <p align="center">
-  <img src="https://api.star-history.com/svg?repos=ntkhang03/Goat-Bot-V2&type=Date" alt="Star History Chart" />
-</p>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-## 💝 Show Your Support
-
-<p align="center">
-  <a href="https://github.com/ntkhang03/Goat-Bot-V2">
-    <img src="https://img.shields.io/badge/Give%20a%20⭐%20if%20this%20project%20helped%20you!-yellow?style=for-the-badge&logo=github" alt="Star this repository" />
+  <a href="https://wa.me/+8801964467614?text=Assalamualaikum%20Admin%20SHAHADAT%20SAHU%20Need%20Help%20Please%20Brother%20🫶">
+    <img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
+  </a>
+  <a href="https://m.me/100078859776449">
+    <img alt="Messenger" src="https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white">
   </a>
 </p>
 
+---
+
+---
+
+💖 **Thank You For Choosing —͟͟͞͞sʜɪғꫝ֟፝ؖ۬ᴛ ✿ 𝗕𝗼𝘁!**  
+🗓️ *Release Date:* `08/09/2025 at 08:30`  
+⭐ **Please don't forget to give a star after forking! It really helps!**
+
+---
+
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=FF6B6B&center=true&vCenter=true&width=600&lines=Thanks+for+visiting!+🙏;Don't+forget+to+⭐+the+repo;Happy+Coding!+🚀;Built+with+❤️+by+NTKhang+%26+NeoKEX" alt="Thanks" />
+  <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" alt="Star" />
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
+<p align="center">
+  <a href="https://github.com/shahadat-sahu"><img src="https://img.icons8.com/fluency/48/000000/github.png" alt="GitHub"></a>
+  <a href="https://wa.me/+8801882333052"><img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp"></a>
+  <a href="https://facebook.com/100001039692046"><img src="https://img.icons8.com/fluency/48/000000/facebook.png" alt="Facebook"></a>
+  <a href="https://t.me/+8EtzLXVG-REwYTM1"><img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram"></a>
+  <a href="https://youtube.com/@cyberbotcommunity"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube"></a>
+</p>
 
-</div>
+**I hope you enjoy my fork! Thank you for supporting the —͟͟͞͞sʜɪғꫝ֟፝ؖ۬ᴛ ✿ chat bot!**
