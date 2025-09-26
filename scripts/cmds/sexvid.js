@@ -3,7 +3,7 @@
 
 module.exports = {
   config: {
-    name: "sexvid",
+    name: "svid",
     aliases: ["sex","sexvid"],
     version: "2.0",
     author: "nexo_here",
